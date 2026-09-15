@@ -1,6 +1,6 @@
-import peices.comportamento.*;//importando todas as classes .
+import peices.estrutura.*;//importando todas as classes .
 
 public class Main{
 
-
+    
 }
