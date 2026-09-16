@@ -2,11 +2,15 @@ package tabuleiroTela;
 import peices.estrutura.*;
 
 
-public class inicialização {//aqui vai ficar a função responsável por inicial o jogo.
+public class inicialização {
+
+    //sua funcionalidade está feita, ainda não sei se de forma correta.
+    //aqui vai ficar a função responsável por inicial o jogo.
 
 
-    public static void preencherTabuleiro(pecas tabuleiro[][]){//vai entrar a matriz.
+    public static pecas[][] preencherTabuleiro(){//vai entrar a matriz.
         
+        pecas tabuleiro[][] = new pecas[8][8];
         //peoẽs brancos:
         for(int i = 0 ; i <=7 ; i++){
             tabuleiro[1][i] = criarPecas(i+1,2,true,1, "Peão" );
@@ -53,6 +57,7 @@ public class inicialização {//aqui vai ficar a função responsável por inici
         //rei negro:
         tabuleiro[7][4] = criarPecas(5, 8, false, 4, "Rei");
 
+        return tabuleiro;
     }
 
     public static pecas criarPecas(
